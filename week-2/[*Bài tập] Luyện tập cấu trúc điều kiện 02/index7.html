@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Giải phương trình bậc 2 ax2+bx+c=d</h1>
+<script>
+a= prompt(" nhập a")
+b= prompt(" nhập b")
+c= prompt(" nhập c")
+d= prompt(" nhập d")
+delta= b*b-4*a*c
+candelta = Math.sqrt(delta)
+x= (d-c)/b
+x1 = (-b+candelta)/2*a
+x2 = (-b-candelta)/2*a
+x3 = -b/2*a
+if(a==0){
+    alert("Giá trị của x là " + x)
+} else if(delta==0){
+    alert("giá trị của x là " +x3)
+} else if(delta>0){
+    alert("giá trị của x là " + x1 + x2)
+} else {
+    alert(" phương trình vô nghiệm")
+}
+</script>
+
+</body>
+</html>

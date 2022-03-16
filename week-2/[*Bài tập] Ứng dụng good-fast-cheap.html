@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="range"  id="good" min="0" max="5"  style="max-width: 40px" onclick="chuyengood()"><b>Good</b><br>
+<input type="range" id="cheap" min="0" max="5"  style="max-width: 40px" onclick="chuyencheap()"><b>Cheap</b><br>
+<input type="range" id="fast" min="0" max="5"  style="max-width: 40px" onclick="chuyenfast()"><b>Fast</b>
+</body>
+</html>
+<script>
+
+    let good = document.getElementById('good')
+    let cheap = document.getElementById('cheap')
+    let fast = document.getElementById('fast')
+
+    function macdinh(){
+        good.value = 5
+        cheap.value = 5
+        fast.value = 5
+    }
+
+    function chuyengood(){
+        if(good.value == 0){
+            good.value +=5
+        }
+        else{
+            good.value -=5
+        }
+    }
+
+    function chuyencheap(){
+        if(cheap.value == 0){
+            cheap.value +=5
+        }
+        else{
+            cheap.value -=5
+        }
+    }
+
+    function chuyenfast(){
+        if(fast.value == 0){
+            fast.value +=5
+        }
+        else{
+            fast.value -=5
+        }
+    }
+
+    function macdinh2() {
+        if (good.value == 5 && cheap.value == 5) {
+            fast.value = 0
+        } else if (good.value == 5 && fast.value == 5) {
+            cheap.value = 0
+        } else {
+            good.value = 0
+        }
+    }
+
+    document.addEventListener('click', macdinh2)
+
+
+    window.onload(macdinh())
+
+
+</script>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="dauvao">
+<select name="st1" id="st1">
+    <option value="a">VND</option>
+    <option value="b">USD</option>
+</select>
+<select name="st2" id="st2">
+    <option value="a">VND</option>
+    <option value="b">USD</option>
+</select>
+<button onclick="chuyendoi()">convert</button>
+<script>
+    function chuyendoi() {
+        let dauvao = document.getElementById(`dauvao`).value;
+        let st1 = document.getElementById(`st1`).value;
+        let st2 = document.getElementById(`st2`).value;
+        if (st1==st2) {
+            alert(dauvao)
+        }
+        if(st1==`a` && st2==`b`) {
+            alert(dauvao/23000);
+        }
+        if (st1==`b` && st2==`a`) {
+            alert(dauvao*23000);
+        }
+    }
+</script>
+</body>
+</html>

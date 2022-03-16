@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Âm lịch</title>
+</head>
+<body>
+<script>
+    let a = parseInt(prompt(" nhập năm sinh"));
+ let can = a%10 ;
+ let chi = a%12 ;
+ let showCan;
+ let showchi;
+switch(can){
+   case 1:
+       showCan = "Thân"
+        break;
+    case 2 :
+        showcan = "Nhâm"
+        break;
+    case 3 :
+        showcan = "Quý"
+        break;
+    case 4 :
+        showcan = "Giáp"
+        break;
+    case 5 :
+        showcan = "Ất"
+        break;
+    case 6 :
+        showcan = "Bính"
+        break;
+    case 7 :
+        showcan ="Đinh"
+        break;
+    case 8 :
+        showcan = "Mậu"
+        break
+    case 9 :
+        showcan = "Kỷ"
+        break;
+    case 0 :
+        showcan = "Canh"
+}
+switch (chi) {
+    case 0 :
+        showchi = "Thân"
+        break;
+    case 1 :
+        showchi = "Dậu"
+        break;
+    case 2 :
+        showchi = "Tuất"
+        break;
+    case 3 :
+        showchi = "Hợi"
+        break;
+    case 4 :
+        showchi = "Tý"
+        break;
+    case 5 :
+        showchi = " Sửu"
+        break;
+    case 6 :
+        showchi = "Dần"
+        break;
+    case 7 :
+        showchi = " Mão"
+        break;
+    case 8 :
+        showchi = "Thìn"
+        break;
+    case 9 :
+        showchi = "Tỵ"
+        break;
+    case 10 :
+        showchi = "Ngọ"
+        break;
+    case 11 :
+        showchi = "Mùi"
+        break;
+}
+document.write('Năm tuổi Âm là :' + showcan + showchi);
+</script>
+</body>
+</html>

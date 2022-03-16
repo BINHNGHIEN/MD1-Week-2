@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Do you love me?</h1>
+
+<button onclick="yeu()" id="yes">Yes</button>
+<button onclick="ghet()" id="no">No</button>
+</script>
+</body>
+</html>
+<script>
+    function yeu(){
+        alert("<3");
+    }
+    let no=document.getElementById('no');
+    function batdau(){
+        no.style.position='relative';
+        no.style.left= 0+'px';
+        no.style.top=0+'px';
+    }
+    function ghet(){
+        no.style.left= Math.random()*100+'px';
+        no.style.top= Math.random()*100+'px';
+    }
+    window.onload(batdau());
+</script>

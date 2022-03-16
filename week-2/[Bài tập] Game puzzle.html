@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Game puzzle</title>
+</head>
+<body>
+<img src="imagine/Cat%201.jpg" height="160" width="800" id="img1" onclick="changeimage1()"/><br>
+<img src="imagine/Cat%202.jpg" height="160" width="800" id="img2" onclick="changeimage2()"/><br>
+<img src="imagine/Cat%203.jpg" height="160" width="800" id="img3" onclick="changeimage3()"/><br>
+<img src="imagine/Cat%204.jpg" height="160" width="800" id="img4" onclick="changeimage4()"/><br>
+<img src="imagine/Cat%205.jpg" height="160" width="800" id="img5" onclick="changeimage5()"/><br>
+
+<script>
+let count1=0;
+let count2=1;
+let count3=2;
+let count4=3;
+let count5=4;
+let image1=document.getElementById("img1");
+let image2=document.getElementById("img2");
+let image3=document.getElementById("img3");
+let image4=document.getElementById("img4");
+let image5=document.getElementById("img5");
+function changeimage1(){
+    count1++;
+    if (count1 == 1) {
+        image1.src = "imagine/Cat 1.jpg"
+    } else if (count1 == 2) {
+        image1.src = "imagine/Gau 1.jpg"
+    } else if(count1==3){
+        image1.src="imagine/Khi 1.jpg"
+    } else {
+        count1==0
+        image1.src="imagine/Cat 1.jpg"
+    }
+}
+function changeimage2(){
+    count2++;
+    if (count2 == 1) {
+        image1.src = "imagine/Cat 2.jpg"
+    } else if (count2 == 2) {
+        image1.src = "imagine/Gau 2.jpg"
+    } else if (count2==3) {
+        image2.src = "imagine/Khi 2.jpg"
+    } else {
+        count2==0
+        image2.src="imagine/Cat 2.jpg"
+    }
+
+}
+function changeimage3() {
+    count3++;
+    if (count3 == 1) {
+        image1.src = "imagine/Cat 3.jpg"
+    } else if (count3 == 2) {
+        image1.src = "imagine/Gau 3.jpg"
+    } else if (count2 == 3) {
+        image2.src = "imagine/Khi 3.jpg"
+    } else {
+        image2.src = "imagine/Cat 3.jpg"
+    }
+}
+
+
+
+</script>
+</body>
+</html>

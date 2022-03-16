@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<img src="imagine/img4.jpeg" height="100" width="100" id="myimage"></body><br>
+<script>
+    initImage()
+    function initImage(){
+        myimage.style.position="relative";
+        myimage.style.left= 0+'px';
+        myimage.style.top= 0+'px';
+    }
+    function moveleft(){
+        myimage.style.left=parseInt(myimage.style.left)-20+'px';
+    }
+    function moveright(){
+        myimage.style.left=parseInt(myimage.style.left)+20+'px';
+    }
+    function moveup(){
+        myimage.style.top=parseInt(myimage.style.top)-20+'px';
+    }
+    function movedown(){
+        myimage.style.top=parseInt(myimage.style.top)+20+'px';
+    }
+    function moveWithKeyBoard(evt){
+        switch(evt.keyCode){
+            case 38:
+                moveup();
+                break;
+            case 40:
+                movedown();
+                break;
+            case 37:
+                moveleft();
+                break;
+            case 39:
+                moveright();
+                break;
+        }
+    }
+    function doWorking(){
+        addEventListener('keydown', moveWithKeyBoard)
+    }
+    document.body.onload= doWorking;
+</script>
+</body>
+</html>

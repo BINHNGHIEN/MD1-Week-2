@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<img src="imagine/img4.jpeg" height="100" width="100" id="myimage"></body><br/>
+<button onclick="moveleft()">MoveLeft</button>
+<button onclick="moveright()">MoveRight</button>
+<button onclick="moveup()">MoveUp</button>
+<button onclick="movedown()">MoveDown</button>
+<script>
+    let myimage=document.getElementById("myimage");
+    initImage();
+    function initImage(){
+        myimage.style.position= "relative";
+        myimage.style.left= 0 + 'px';
+        myimage.style.top = 0 + 'px';
+    }
+    function moveleft(){
+        myimage.style.left= parseInt(myimage.style.left) -20+'px';
+    }
+    function moveright(){
+        myimage.style.left= parseInt(myimage.style.left) +20 +'px';
+    }
+    function moveup(){
+        myimage.style.top= parseInt(myimage.style.top) -20+'px';
+    }
+    function movedown(){
+        myimage.style.top=parseInt(myimage.style.top)+20+'px';
+    }
+</script>
+
+</html>

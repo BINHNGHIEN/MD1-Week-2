@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type='text' value="" name='diem1' id='diem1' placeholder="Nhập điểm bài kiểm tra">
+<input type='text' value="" name='diem1' id='diem2' placeholder="Nhập điểm bài kiểm tra học kì">
+<input type='text' value="" name='diem1' id='diem3' placeholder="Nhập điểm bài kiểm tra cuối kì">
+<button onclick="tinhdiemtb()"> Tính điểm trung bình</button>
+<script>
+    var x1 = document.getElementById('diem1');
+    var x2 = document.getElementById('diem2');
+    var x3 = document.getElementById('diem3');
+    function tinhdiemtb() {
+        tb = (parseFloat(x1.value) + parseFloat(x2.value) * 2 + parseFloat(x3.value) * 3) / 6;
+        if (tb >= 8) {
+            alert('Giỏi')
+        } else if (tb >= 6.5) {
+            alert('Khá')
+        } else if (tb >= 5) {
+            alert('Trung bình')
+        } else alert('Kém')
+    }
+</script>
+</body>
+</html>
